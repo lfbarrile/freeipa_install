@@ -6,15 +6,6 @@ echo $ip
 hostname=$(hostname)
 echo $hostname
 
-#echo "ajustando hostname do client"
-#echo "insira o nome do host"
-#read host
-#hostname=$host$domain
-#echo $hostname
-#hostnamectl set-hostname "$hostname"
-#exec bash
-#sleep 5
-
 echo -e "$ip\t$hostname\t" >> /etc/hosts
 echo -e "10.10.10.44\tfreeipa-srv03.csd.intra\t" >> /etc/hosts
 echo -e "10.10.9.130\tfreeipa-srv01.csd.intra\t" >> /etc/hosts
